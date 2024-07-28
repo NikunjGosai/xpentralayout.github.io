@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpentra Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header start -->
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="header__inner-wrap">
+                <h1 class="header__logo-wrap">
+                    <a href="/">
+                        <img src="./images/header-logo.svg" alt="Header Logo" class="logo-desk">
+                        <img src="./images/Logo-white.svg" alt="Header Logo" class="logo-mob">
+                    </a>
+                </h1>
+                <nav class="header__nav-wrap">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">Transactions <span class="header__down-arrow"><img src="./images/down-arrow.svg" alt="Down Arrow"></span></a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">Accounts <span class="header__down-arrow"><img src="./images/down-arrow.svg" alt="Down Arrow"></span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__icon-wrap">
+                    <div class="header__icon-list1">
+                        <div class="header__icon-number">03</div>
+                        <div class="header__icon-bell"><img src="./images/header-bell.svg" alt="Header Bell"></div>
+                    </div>
+                    <div class="header__icon-list2">
+                        <div class="header__icon-profile"><img src="./images/header-profile.svg" alt="Header Profile"></div>    
+                    </div>
+                </div>
+                <div class="header__icon-mob-wrap">
+                    <span class="header__icon-bell"><img src="./images/header-mob-bell.svg" alt="Header Bell"></span>
+                    <span class="header__icon-mic"><img src="./images/header-mob-mic.svg" alt="Header Mic"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- left and right section -->
+    <div class="section-main-wrap">
+        <div class="container">
+            <div class="section-row">
+                <!-- left section -->
+                <div class="left-section">
+    
+                    <!-- profile name section -->
+                    <section class="profile-name__wrapper">
+                        <div class="profile-name__inner-wrap">
+                            <div class="profile-name__img">
+                                <img src="./images/profile-name-img.png" alt="Profile Image" class="img-responsive"> 
+                            </div>
+                            <h4 class="profile-name__title">Welcome back, <span>Akshat Nigam</span></h4>
+                        </div>
+                    </section>
+
+                    <!-- transaction section -->
+                    <section class="transaction-wrapper">
+                        <div class="trans__inner-wrap">
+                            <div class="trans__head-wrap">
+                                <div class="trans__title-wrap">
+                                    <div class="trans__img">
+                                        <img src="./images/trans-img.svg" alt="Transactions Image">
+                                    </div>
+                                    <h4 class="trans__title">Transactions</h4>
+                                </div>
+                                <div class="trans__view-all-wrap">
+                                    <h4 class="trans__view-all-title">View All</h4>
+                                    <div class="trans__view-all-img">
+                                        <img src="./images/viewall-arrow.svg" alt="view All Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- transaction amount transaction -->
+                        <div class="trans-amt__wrap">
+                            <div class="trans-amt__inner-wrap">
+                                <div class="trans-amt__item">
+                                    <h4 class="trans-amt__price">3,46,76434</h4>
+                                    <p class="trans-amt__title">Beneficiary transactions</p>
+                                </div>
+                                <div class="trans-amt__item">
+                                    <h4 class="trans-amt__price">694</h4>
+                                    <p class="trans-amt__title">Internal transactions</p>
+                                </div>
+                            </div>
+                            <div class="trans-amt__main-wrap">
+                                <ul class="trans-amt__list">
+                                    <li class="trans-amt__list-item"><p class="trans-amt__para">Select the transaction type you want to create</p></li>
+                                    <li class="trans-amt__list-item">
+                                        <div class="trans-amt__img">
+                                            <img src="./images/trans-item-img-1.svg" alt="Beneficiary Image">
+                                        </div>
+                                        <h4 class="trans-amt__list-title">Beneficiary</h4>
+                                        <p class="trans-amt__para">Select category and pay a beneficiary</p>
+                                    </li>
+                                    <li class="trans-amt__list-item">
+                                        <div class="trans-amt__img">
+                                            <img src="./images/trans-item-img-2.svg" alt="Beneficiary Image">
+                                        </div>
+                                        <h4 class="trans-amt__list-title">Internal</h4>
+                                        <p class="trans-amt__para">Transfer funds from one owner account to another</p>
+                                    </li>
+                                </ul>
+                                <button class="trans-amt__pay-btn"><span><img src="./images/pay-arrow.svg" alt="Pay Arrow"></span>Pay</button>
+                                
+                                <!-- transaction cards clickability -->
+                            </div>
+                            <div class="trans-amt-cards__wrap">
+                                <ul class="trans-amt-cards__list">
+                                    <li class="trans-amt__list-item">
+                                        <div class="trans-amt__img">
+                                            <img src="./images/trans-cards-img-1.svg" alt="Pay Image">
+                                        </div>
+                                        <h4 class="trans-amt__list-title">Pay</h4>
+                                        <p class="trans-amt__para">Create an outgoing transaction</p>
+                                    </li>
+                                    <li class="trans-amt__list-item">
+                                        <div class="trans-amt__img">
+                                            <img src="./images/trans-cards-img-2.svg" alt="Receive Image">
+                                        </div>
+                                        <h4 class="trans-amt__list-title">Receive</h4>
+                                        <p class="trans-amt__para">Create an incoming transaction</p>
+                                    </li>
+                                    <li class="trans-amt__list-item">
+                                        <div class="trans-amt__img">
+                                            <img src="./images/ben-item-img-2.svg" alt="Approve Image">
+                                        </div>
+                                        <h4 class="trans-amt__list-title">Approve</h4>
+                                        <p class="trans-amt__para">Approve created transactions</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Beneficiary section -->
+                    <section class="beneficiary-wrapper">
+                        <div class="ben__inner-wrap">
+                            <div class="ben__head-wrap">
+                                <div class="ben__title-wrap">
+                                    <div class="ben__img">
+                                        <img src="./images/ben-img.svg" alt="Beneficiary Image">
+                                    </div>
+                                    <h4 class="ben__title">Beneficiary Accounts</h4>
+                                </div>
+                                <div class="ben__view-all-wrap">
+                                    <h4 class="ben__view-all-title">View All</h4>
+                                    <div class="ben__view-all-img">
+                                        <img src="./images/viewall-arrow.svg" alt="view All Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- beneficiary amount transaction -->
+                        <div class="ben-amt__wrap">
+                            <div class="ben-amt__inner-wrap">
+                                <div class="ben-amt__item">
+                                    <h4 class="ben-amt__price">303</h4>
+                                    <p class="ben-amt__title">Pending Accounts</p>
+                                </div>
+                                <div class="ben-amt__item">
+                                    <h4 class="ben-amt__price">03</h4>
+                                    <p class="ben-amt__title">Approve Accounts</p>
+                                </div>
+                            </div>
+                            <div class="ben-amt__main-wrap">
+                                <ul class="ben-amt__list">
+                                    <li class="ben-amt__list-item">
+                                        <div class="ben-amt__img">
+                                            <img src="./images/ben-item-img-1.svg" alt="Beneficiary Image">
+                                        </div>
+                                        <h4 class="ben-amt__list-title">Create</h4>
+                                        <p class="ben-amt__para">Create a beneficiary account</p>
+                                    </li>
+                                    <li class="ben-amt__list-item">
+                                        <div class="ben-amt__img">
+                                            <img src="./images/ben-item-img-2.svg" alt="Beneficiary Image">
+                                        </div>
+                                        <h4 class="ben-amt__list-title">Approve</h4>
+                                        <p class="ben-amt__para">Approve created accounts</p>
+                                    </li>
+                                    <li class="ben-amt__list-item"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- transaction mob section -->
+                    <section class="trans-mob__wrapper">
+                        <div class="trans-mob-btn__wrap">
+                            <button class="trans-mob-details__btn"><span><img src="./images/trans-img.svg" alt="Transactions Button"></span>Transactions</button>
+                            <button class="trans-mob-acnts__btn"><span><img src="./images/accounts-mob-img.svg" alt="Date Button"></span>Accounts</button>
+                        </div>
+                        <ul class="trans-mob__list">
+                            <li class="trans-mob__list-item">
+                                <a href="#" class="trans-mob__link">
+                                    <div class="trans-mob__img">
+                                        <img src="./images/trans-cards-img-1.svg" alt="Approve Image" class="img-responsive">
+                                    </div>
+                                    <div class="trans-mob__content">
+                                        <h4 class="trans-mob__list-title">Pay</h4>
+                                        <p class="trans-mob__para">Create an outgoing transaction</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="trans-mob__list-item">
+                                <a href="#" class="trans-mob__link">
+                                    <div class="trans-mob__img">
+                                        <img src="./images/trans-cards-img-2.svg" alt="Approve Image" class="img-responsive">
+                                    </div>
+                                    <div class="trans-mob__content">
+                                        <h4 class="trans-mob__list-title">Receive</h4>
+                                        <p class="trans-mob__para">Create an incoming transaction</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="trans-mob__list-item">
+                                <a href="#" class="trans-mob__link">
+                                    <div class="trans-mob__img">
+                                        <img src="./images/ben-item-img-2.svg" alt="Approve Image" class="img-responsive">
+                                    </div>
+                                    <div class="trans-mob__content">
+                                        <h4 class="trans-mob__list-title">Approve</h4>
+                                        <p class="trans-mob__para">Approve created transactions</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- accounts mob section -->
+                    <section class="accounts-mob__wrapper">
+                        <div class="accounts-mob-btn__wrap">
+                            <button class="accounts-mob-pay__btn"><span><img src="./images/pay-arrow.svg" alt="Pay Arrow Button"></span>Pay</button>
+                            <button class="accounts-mob-acnts__btn"><span><img src="./images/accounts-mob-img.svg" alt="Date Button"></span>Accounts</button>
+                        </div>
+                        <ul class="accounts-mob__list">
+                            <li class="accounts-mob__list-item">
+                                <a href="#" class="accounts-mob__link">
+                                    <div class="accounts-mob__img">
+                                        <img src="./images/trans-item-img-1.svg" alt="Beneficiary Image" class="img-responsive">
+                                    </div>
+                                    <div class="accounts-mob__content">
+                                        <h4 class="accounts-mob__list-title">Beneficiary</h4>
+                                        <p class="accounts-mob__para">Select category and pay a beneficiary</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="accounts-mob__list-item">
+                                <a href="#" class="accounts-mob__link">
+                                    <div class="accounts-mob__img">
+                                        <img src="./images/trans-item-img-2.svg" alt="Internal Image" class="img-responsive">
+                                    </div>
+                                    <div class="accounts-mob__content">
+                                        <h4 class="accounts-mob__list-title">Internal</h4>
+                                        <p class="accounts-mob__para">Transfer funds from one owner account to another</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="accounts-mob__list-item">
+                                <a href="#" class="accounts-mob__link">
+                                    <h4 class="accounts-mob__list-title">Select the transaction type you want to create</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- upcoming bank holidays mob -->
+                    <div class="upcoming-mob__wrap">
+                        <h4 class="upcoming-mob__title">Upcoming bank holidays <span><img src="./images/upcoming-mob-arrow.svg" alt="Arrow Button"></span></h4>
+                    </div>
+                </div>
+        
+                <!-- right aside section -->
+                <aside class="right-section">
+
+                    <!-- entry details sidebar section -->
+                    <div class="entry-details__sidebar">
+                        <!-- top buttons -->
+                        <section class="top-head-btn__wrap">
+                            <button class="entry-details__btn"><span><img src="./images/entry-dtls-btn.svg" alt="Entry Button"></span>Entry Details</button>
+                            <button class="bank-holidays__btn"><span><img src="./images/date-filter-btn.svg" alt="Date Button"></span>Upcoming Bank Holidays</button>
+                        </section>
+                        
+                        <!-- entry details -->
+                        <section class="entry-details__wrap">
+                            <a href="#" class="entry-details__link">
+                                <h5 class="entry-details__sub-title">Entity Details</h5>
+                                <h4 class="entry-details__title">Q2pay Technologies Pvt. Ltd.</h4>
+                                <p class="entry-details__para">Entity name</p>
+                                <div class="entry-details__price"><span>&#8377 120.89</span> in <span>456</span> accounts</div>
+                                <p class="entry-details__para-2">Total balance - in crores</p>
+                                <p class="entry-details__mob-para">Total balance - updated 5 hrs ago</p>
+                            </a>
+                        </section>
+    
+                        <!-- balance summary -->
+                        <section class="balance-sum__wrap">
+                            <a href="#" class="balance-sum__link">
+                                <h4 class="balance-sum__title">Balance Summary</h4>
+                                <button class="balance-sum__view-btn">View All <span><img src="./images/viewall-arrow.svg" alt="view All Arrow"></span></button> 
+                            </a>
+                        </section>
+    
+                        <!-- account number -->
+                        <section class="account-num__wrap">
+                            <!-- account num mob btns -->
+                            <div class="account-num__btn-wrap">
+                                <div class="account-num__btns">Bank</div>
+                                <div class="account-num__btns">Account no.</div>
+                                <div class="account-num__btns">Account balance (in CR)</div>
+                            </div>
+
+                            <!-- account number list -->
+                            <ul class="account-num__list">
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                                <li class="account-num__item">
+                                    <a href="#" class="account-num__link">
+                                        <div class="account-num__inner-wrap">
+                                            <div class="account-num__left-wrap">
+                                                <h4 class="account-num__price">7834 •••• 0892</h4>
+                                                <p class="account-num__para">Account number</p>
+                                            </div>
+                                            <div class="account-num__right-wrap">
+                                                <h4 class="account-num__income">&#8377 12,22,000,00</h4>
+                                                <p class="account-num__para">Balance - 25 mins ago</p>
+                                            </div>
+                                        </div>
+                                        <span class="account-num__loading"><img src="./images/account-loading.svg" alt="Account Loading"></span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- account num view btn -->
+                            <div class="account-num__view-btn">View All Accounts</div>
+                        </section>
+                    </div>
+
+                    <!-- upcoming bank holidays section -->
+                    <section class="upcoming-holdys__sidebar">
+                        <!-- top buttons -->
+                        <div class="top-head-btn__wrap">
+                            <button class="entry-details__btn"><span><img src="./images/entry-dtls-btn.svg" alt="Entry Button"></span>Entry Details</button>
+                            <button class="bank-holidays__btn"><span><img src="./images/date-filter-btn.svg" alt="Date Button"></span>Upcoming Bank Holidays</button>
+                        </div>
+
+                        <!-- upcoming calendar holidays -->
+                        <div class="upcoming-caldr__wrap">
+                            <ul class="upcoming-caldr__list">
+                                <li class="upcoming-caldr__item">
+                                    <a href="#" class="upcoming-caldr__link">
+                                        <h4 class="upcoming-caldr__month">January</h4>
+                                        <div class="upcoming-caldr__dates-wrap">
+                                            <div class="upcoming-caldr__dates-left">
+                                                <div class="upcoming-caldr__date">10</div>
+                                                <div class="upcoming-caldr__day">MON</div>
+                                            </div>
+                                            <div class="upcoming-caldr__dates-right">
+                                                <h4 class="upcoming-caldr__title">Maharashtra Day/ Labour Day</h4>
+                                                <p class="upcoming-caldr__para">Today</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="upcoming-caldr__item">
+                                    <a href="#" class="upcoming-caldr__link">
+                                        <div class="upcoming-caldr__dates-wrap">
+                                            <div class="upcoming-caldr__dates-left">
+                                                <div class="upcoming-caldr__date">11</div>
+                                                <div class="upcoming-caldr__day">TUE</div>
+                                            </div>
+                                            <div class="upcoming-caldr__dates-right">
+                                                <h4 class="upcoming-caldr__title">Maharashtra Day/ Labour Day</h4>
+                                                <p class="upcoming-caldr__para">Tomorrow</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="upcoming-caldr__item">
+                                    <a href="#" class="upcoming-caldr__link">
+                                        <h4 class="upcoming-caldr__month">February</h4>
+                                        <div class="upcoming-caldr__dates-wrap">
+                                            <div class="upcoming-caldr__dates-left">
+                                                <div class="upcoming-caldr__date">10</div>
+                                                <div class="upcoming-caldr__day">MON</div>
+                                            </div>
+                                            <div class="upcoming-caldr__dates-right">
+                                                <h4 class="upcoming-caldr__title">Maharashtra Day/ Labour Day</h4>
+                                                <p class="upcoming-caldr__para">In 1 month</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="upcoming-caldr__item">
+                                    <a href="#" class="upcoming-caldr__link">
+                                        <div class="upcoming-caldr__dates-wrap">
+                                            <div class="upcoming-caldr__dates-left">
+                                                <div class="upcoming-caldr__date">11</div>
+                                                <div class="upcoming-caldr__day">TUE</div>
+                                            </div>
+                                            <div class="upcoming-caldr__dates-right">
+                                                <h4 class="upcoming-caldr__title">Maharashtra Day/ Labour Day</h4>
+                                                <p class="upcoming-caldr__para">in 1 month</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="upcoming-caldr__item">
+                                    <a href="#" class="upcoming-caldr__link">
+                                        <h4 class="upcoming-caldr__month">March</h4>
+                                        <div class="upcoming-caldr__dates-wrap">
+                                            <div class="upcoming-caldr__dates-left">
+                                                <div class="upcoming-caldr__date">10</div>
+                                            </div>
+                                            <div class="upcoming-caldr__dates-right">
+                                                <h4 class="upcoming-caldr__title">Maharashtra Day/ Labour Day</h4>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer-wrapper">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <div class="footer__img">
+                    <img src="./images/footer-img-1.svg" alt="Home Image">
+                </div>
+                <h4 class="footer__title">Home</h4>
+            </li>
+            <li class="footer__item">
+                <div class="footer__img">
+                    <img src="./images/footer-img-2.svg" alt="Transactions Image">
+                </div>
+                <h4 class="footer__title">Transactions</h4>
+            </li>
+            <li class="footer__item">
+                <div class="footer__img">
+                    <img src="./images/footer-img-3.svg" alt="Accounts Image">
+                </div>
+                <h4 class="footer__title">Accounts</h4>
+            </li>
+            <li class="footer__item">
+                <div class="footer__img">
+                    <img src="./images/footer-img-4.svg" alt="Profile Image">
+                </div>
+                <h4 class="footer__title">Profile</h4>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+:root {
+    /* Colors: */
+    --primary-color: #1c396c;
+    --blue-color: #314d7e;
+    --lightblue-color: #3a5686;
+    --lightblue-color-2: #506994;
+    --darkblue-color: #244277;
+    --black-color: #000;
+    --green-color: #4DDD37;
+    --text-white-color: #f9f9f9;
+    --text-white-color-2: #dadada;
+    --white-color: #fff;
+}
+
+* {margin: 0;padding: 0;word-break: break-word;box-sizing: border-box;font-family: "Open Sans", sans-serif;}
+:after,:before {box-sizing: border-box;}
+li,ul {list-style: none;margin: 0;padding: 0;}
+a {font: inherit;text-decoration: none;outline: 0;}
+a:focus {outline: 0;box-shadow: none;}
+.container {max-width: 100%;width: 1050px;margin: 0 auto;}
+.container, .container-fluid {margin-left: auto;margin-right: auto;padding-left: 10px;padding-right: 10px;}
+.img-responsive {display: block;height: auto;-o-object-fit: cover;object-fit: cover;width: 100%;}
+body {background-color: var(--primary-color);}
+
+/* header css */
+.header-wrapper {background-color: var(--white-color);padding: 15px 0;margin-bottom: 40px;}
+.header__inner-wrap, .header__icon-wrap {display: flex;align-items: center;justify-content: space-between;}
+.header__logo-wrap {width: 110px;height: 24px;}
+.header__logo-wrap img, .profile-name__img img {display: block;width: 100%;height: 100%;}
+.header__logo-wrap .logo-mob, .header__icon-mob-wrap {display: none;}
+/* header nav list */
+.header__nav-list, .header__icon-list1 {display: flex;align-items: center;}
+.header__nav-item {margin-right: 40px;}
+.header__nav-item:last-child {margin-right: 0;}
+.header__nav-item a {color: var(--black-color);font-size: 16px;font-weight: 600;transition: all .5s;display: flex;}
+.header__nav-item a:hover {color: var(--primary-color);}
+.header__down-arrow {margin-left: 8px;margin-top: -3px;}
+.header__down-arrow img {width: 8px;height: 6px;}
+/* header icon list */
+.header__icon-list1, .header__icon-list2 {background-color: #dbdbdb;border-radius: 28px;padding: 5px 10px 5px 5px;margin-right: 15px;} 
+.header__icon-number {background-color: #031f4f;padding: 5px 7px;border-radius: 50%;color: var(--white-color);font-size: 14px;font-weight: 500;margin-right: 15px;}
+.header__icon-bell, .header__icon-bell img, .header__icon-profile, .header__icon-profile img {width: 25px;height: 25px;}
+.header__icon-list2 {padding: 6px;margin-right: 0;}
+.header__icon-profile {background-color: #102c5d;border-radius: 50%;}
+.header__icon-profile img {padding-top: 3px;}
+
+/* sections divided */
+.section-row {display: flex;justify-content: space-between;}
+
+/* left section */
+.left-section {width: calc(100% - 330px);}
+
+/* profile name css */ 
+.profile-name__wrapper {background-color: var(--lightblue-color);padding: 25px;border-radius: 20px;margin-bottom: 20px;}
+.profile-name__inner-wrap {display: flex;align-items: center;}
+.profile-name__img {width: 34px;height: 34px;margin-right: 25px;}
+.profile-name__title {color: var(--text-white-color);font-size: 16px;font-weight: 400;}
+.profile-name__title span {font-size: 20px;font-weight: 600;}
+
+/* transaction css */
+.transaction-wrapper, .beneficiary-wrapper {margin-bottom: 20px;}
+.trans__head-wrap, .ben__head-wrap {display: flex;align-items: center;justify-content: space-between;background-color: var(--darkblue-color);border-top-left-radius: 20px;border-top-right-radius: 20px;}
+.trans-mob-btn__wrap, .trans-mob__wrapper, .accounts-mob__wrapper, .trans-amt-cards__wrap, .upcoming-mob__wrap,.entry-details__mob-para, .entry-details__sub-title, .account-num__btn-wrap, .upcoming-holdys__sidebar, .account-num__view-btn {display: none;}
+.trans__title-wrap, .trans__view-all-wrap, .ben__title-wrap, .ben__view-all-wrap {display: flex;align-items: center;padding-left: 20px;}
+.trans__img, .ben__img {margin-right: 10px;}
+.trans__img img, .ben__img img {width: 15px;height: 13px;}
+.trans__title, .ben__title {color: var(--text-white-color-2);font-size: 14px;font-weight: 400;}
+.trans__view-all-wrap, .ben__view-all-wrap {background-color: var(--blue-color);padding: 15px 20px;border-top-right-radius: 20px;}
+.trans__view-all-title, .ben__view-all-title {color: var(--text-white-color);font-size: 12px;font-weight: 400;margin-right: 10px;}
+.trans__view-all-img, .ben__view-all-img {margin-top: -5px;}
+.trans__view-all-img img, .ben__view-all-img img {width: 8px;height: 8px;}
+
+/* transaction amt left box css */
+.trans-amt__wrap, .trans-amt__list, .ben-amt__wrap, .ben-amt__list, .trans-amt-cards__list {display: flex;align-items: center;justify-content: space-between;}
+.trans-amt__inner-wrap, .ben-amt__inner-wrap {background-color: var(--lightblue-color);padding: 15px 20px;width: 155px;height: 190px;border-bottom-left-radius: 20px;}
+.trans-amt__item, .ben-amt__item {margin-bottom: 15px;}
+.trans-amt__price, .ben-amt__price {color: var(--text-white-color);font-size: 16px;font-weight: 600;margin-bottom: 5px;}
+.trans-amt__title, .ben-amt__title {color: var(--text-white-color-2);font-size: 12px;font-weight: 400;}
+
+/* transaction amt right box css */
+.trans-amt__list-item, .ben-amt__list-item {background-color: var(--lightblue-color-2);text-align: center;height: 190px;padding: 30px 25px;position: relative;width: 100%;}
+.trans-amt__list-item:first-child {padding: 80px 25px 30px;}
+.trans-amt__list-item:last-child, .ben-amt__list-item:last-child {border-bottom-right-radius: 20px;}
+.trans-amt__list-item:nth-child(2)::before, .ben-amt__list-item:nth-child(2)::before {content: "";background-color: var(--primary-color);width: 2px;height: 150px;position: absolute;left: 0;top: 20px;}
+.trans-amt__list-item:nth-child(2)::after, .ben-amt__list-item:nth-child(2)::after {content: "";background-color: var(--primary-color);width: 2px;height: 150px;position: absolute;right: 0;top: 20px;}
+.trans-amt__main-wrap, .ben-amt__main-wrap {width: calc(100% - 155px);position: relative;}
+.trans-amt__para, .ben-amt__para, .upcoming-caldr__para {color: var(--text-white-color-2);font-size: 10px;font-weight: 400;}
+.trans-amt__img, .ben-amt__img {width: 60px;height: 60px;margin: 0 auto 10px;}
+.trans-amt__list-title, .ben-amt__list-title {color: var(--text-white-color);font-size: 16px;font-weight: 600;margin-bottom: 10px;}
+.trans-amt__pay-btn, .ben-amt__pay-btn {background-color: var(--blue-color);padding: 10px 30px;color: var(--text-white-color-2);font-size: 12px;font-weight: 600;position: absolute;left: 0;top: 0;border: none;cursor: pointer;display: flex;align-items: center;border-bottom-right-radius: 10px;}
+.trans-amt__pay-btn span, .ben-amt__pay-btn span {width: 6px;height: 13px;margin-right: 5px;}
+.trans-amt__pay-btn span img, .ben-amt__pay-btn span img {width: 6px;height: 11px;}
+
+/* trans amt cards list */
+.trans-amt-cards__wrap {width: calc(100% - 155px);}
+.trans-amt-cards__list .trans-amt__list-item:first-child {padding: 30px 25px;}
+
+/* right section */
+.right-section {width: 310px;}
+
+/* entry details sidebar css */
+/* top buttons css */
+.top-head-btn__wrap {display: flex;align-items: center;justify-content: space-between;}
+.entry-details__btn, .bank-holidays__btn {background-color: var(--lightblue-color);width: 100%;height: 40px;color: var(--text-white-color-2);font-size: 10px;font-weight: 600;border: none;cursor: pointer;display: flex;align-items: center;justify-content: center;border-top-left-radius: 20px;}
+.entry-details__btn span, .bank-holidays__btn span {margin-right: 5px;}
+.entry-details__btn span img, .bank-holidays__btn span img {width: 15px;height: 15px;}
+.bank-holidays__btn {background-color: var(--darkblue-color);border-top-left-radius: 0;border-top-right-radius: 20px;}
+
+/* entry details css */
+.entry-details__link {display: block;background-color: var(--lightblue-color);padding: 20px 25px;}
+.entry-details__title, .upcoming-caldr__date {color: var(--text-white-color);font-size: 14px;font-weight: 600;margin-bottom: 5px;}
+.entry-details__para, .entry-details__price, .entry-details__para-2 {color: var(--text-white-color-2);font-size: 12px;font-weight: 400;margin-bottom: 20px;}
+.entry-details__price {color: var(--green-color);font-size: 16px;font-weight: 600;margin-bottom: 5px;}
+.entry-details__para-2 {margin-bottom: 0;}
+
+/* balance summary css */
+.balance-sum__link {display: flex;align-items: center;justify-content: space-between;border-bottom: 2px solid var(--primary-color);}
+.balance-sum__title {color: var(--text-white-color-2);font-size: 14px;font-weight: 600;background-color: var(--blue-color);width: calc(100% - 100px);height: 50px;padding: 15px 20px;}
+.balance-sum__view-btn {background-color: var(--lightblue-color-2);width: 100px;height: 50px;color: var(--text-white-color-2);font-size: 12px;font-weight: 600;border: none;cursor: pointer;display: flex;align-items: center;justify-content: center;position: relative;}
+.balance-sum__view-btn span {margin-left: 5px;}
+.balance-sum__view-btn span img {width: 8px;height: 8px;}
+
+/* accounts balance css */
+.account-num__list {background-color: var(--blue-color);padding: 22px 10px;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
+.account-num__link {display: flex;align-items: center;justify-content: space-between;padding-bottom: 10px;}
+.account-num__item:last-child .account-num__link {padding-bottom: 0;}
+.account-num__inner-wrap {display: flex;align-items: center;justify-content: space-between;width: calc(100% - 40px);height: 45px;background-color: var(--lightblue-color);padding: 5px 10px;border-top-left-radius: 10px;border-bottom-left-radius: 10px;}
+.account-num__price {color: #fcfcfc;font-size: 12px;font-weight: 600;margin-bottom: 5px;}
+.account-num__para {color: var(--text-white-color-2);font-size: 8px;font-weight: 400;}
+.account-num__income {color: var(--green-color);font-size: 12px;font-weight: 600;margin-bottom: 5px;}
+.account-num__loading {background-color: var(--lightblue-color-2);width: 40px;height: 45px;display: flex;align-items: center;justify-content: center;border-top-right-radius: 10px;border-bottom-right-radius: 10px;}
+.account-num__loading img {width: 12px;height: 12px;}
+
+/* upcoming bank holidays sidebar css */
+/* top buttons css */
+.upcoming-holdys__sidebar .entry-details__btn {background-color: var(--darkblue-color);}
+.upcoming-holdys__sidebar .bank-holidays__btn {background-color: var(--lightblue-color);}
+
+/* upcoming calendar holidays */
+.upcoming-caldr__wrap {background-color: var(--lightblue-color);border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
+.upcoming-caldr__month {color: var(--white-color);font-size: 12px;font-weight: 600;background-color: var(--lightblue-color-2);padding: 15px 35px;}
+.upcoming-caldr__dates-wrap {display: flex;align-items: center;padding: 15px 20px;position: relative;}
+.upcoming-caldr__dates-left {width: 55px;height: 55px;border-radius: 5px;display: flex;align-items: center;justify-content: center;flex-direction: column;background-color: var(--lightblue-color-2);}
+.upcoming-caldr__day {color: var(--text-white-color);font-size: 10px;font-weight: 600;}
+.upcoming-caldr__dates-right {width: calc(100% - 55px);flex: 1;padding-left: 20px;}
+.upcoming-caldr__title {color: var(--white-color);font-size: 12px;font-weight: 400;margin-bottom: 5px;}
+
+/* upcoming calendar first child */
+.upcoming-caldr__item:first-child .upcoming-caldr__dates-wrap::after, .upcoming-caldr__item:nth-child(3) .upcoming-caldr__dates-wrap::after {content: "";background-color: var(--darkblue-color);width: 88%;height: 2px;position: absolute;bottom: 0;left: 20px;}
+.upcoming-caldr__item:first-child .upcoming-caldr__link {display: block;padding: 20px 0 0;}
+
+/* upcoming calendar last child */
+.upcoming-caldr__item:last-child .upcoming-caldr__dates-wrap {padding: 15px 20px 18px;}
+.upcoming-caldr__item:last-child .upcoming-caldr__dates-left {height: 28px;border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.upcoming-caldr__item:last-child .upcoming-caldr__date {margin-bottom: 0;}
+
+/* right section clickability css */
+.entry-details__sidebar.active .upcoming-holdys__sidebar {display: block;}
+.entry-details__sidebar.active {display: none;}
+.upcoming-holdys__sidebar.active {display: block;}
+
+/* footer css */
+.footer-wrapper {display: none;}
+
+/* media queries */
+@media only screen and (max-width: 1024px) {
+
+    /* left section */
+    .left-section {width: calc(100% - 290px);}
+
+    /* transaction css */
+    .trans-amt__inner-wrap, .ben-amt__inner-wrap {display: none;}
+    .trans-amt__main-wrap, .ben-amt__main-wrap, .trans-amt-cards__wrap {width: 100%;}
+    .trans-amt__list-item, .ben-amt__list-item {padding: 30px 20px;}
+    .trans-amt__list-item:last-child, .ben-amt__list-item:last-child {padding: 30px 15px;}
+
+    /* right section */
+    .right-section {width: 275px;}
+    .bank-holidays__btn span {margin-right: 0;margin-left: 10px;}
+
+}
+@media only screen and (max-width: 768px) {
+
+    /* header */
+    .header-wrapper {background: var(--lightblue-color-2);margin-top: 30px;margin-bottom: 0;padding: 20px 0;border-bottom: 2px solid #1d3a6d;}
+    .header__inner-wrap, .header__icon-wrap {padding: 0 20px;}
+    .header__logo-wrap .logo-desk, .header__nav-wrap, .header__icon-wrap, .entry-details__para-2, .profile-name__wrapper, .top-head-btn__wrap, .balance-sum__view-btn, .account-num__wrap, .transaction-wrapper, .beneficiary-wrapper {display: none;}
+    .header__logo-wrap .logo-mob {display: block;}
+    .header__icon-mob-wrap {display: flex;align-items: center;position: relative;}
+    .header__icon-bell, .header__icon-bell img {width: 30px;height: 30px;}
+    .header__icon-mic, .header__icon-mic img {width: 32px;height: 32px;}
+    .header__icon-bell {margin-right: 65px;}
+    .header__icon-bell::after {content: "";background-color: #1d3a6d;width: 2px;height: 30px;position: absolute;right: 65px;top: 0;}
+
+    /* sections divided */
+    .section-row {flex-direction: column-reverse;}
+    .left-section, .right-section, .balance-sum__title {width: 100%;}
+    .section-main-wrap .container {padding: 0;}
+
+    /* left section */
+    /* transaction mob css */
+    .trans-mob__wrapper {display: block;margin: 0 20px 30px;}
+    /* trans mob btn */
+    .trans-mob-btn__wrap, .accounts-mob-btn__wrap {display: flex;align-items: center;}
+    .trans-mob-details__btn, .trans-mob-acnts__btn, .accounts-mob-pay__btn, .accounts-mob-acnts__btn {background-color: var(--lightblue-color-2);width: 100%;height: 45px;color: var(--text-white-color);font-size: 16px;font-weight: 600;border: none;cursor: pointer;display: flex;align-items: center;justify-content: center;border-top-left-radius: 20px;}
+    .trans-mob-acnts__btn, .accounts-mob-acnts__btn {background-color: var(--blue-color);border-top-left-radius: 0;border-top-right-radius: 20px;}  
+    .trans-mob-details__btn span, .trans-mob-acnts__btn span, .accounts-mob-pay__btn span, .accounts-mob-acnts__btn span {margin-right: 20px;}      
+    /* trans mob card list */
+    .trans-mob__list, .accounts-mob__list {background-color: var(--lightblue-color-2);padding: 20px 15px;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
+    .trans-mob__link, .accounts-mob__link {display: flex;align-items: center;background-color: var(--lightblue-color);padding: 20px 25px;border-radius: 20px;margin-bottom: 20px;}
+    .trans-mob__list-item:last-child .trans-mob__link, .accounts-mob__list-item:last-child .accounts-mob__link {margin-bottom: 0;}
+    .trans-mob__img, .accounts-mob__img {width: 80px;height: 80px;}
+    .trans-mob__content, .accounts-mob__content {width: calc(100% - 80px);padding-left: 20px;}
+    .trans-mob__list-title, .accounts-mob__list-title {color: var(--text-white-color);font-size: 16px;font-weight: 600;margin-bottom: 10px;}
+    .trans-mob__para, .accounts-mob__para {color: var(--text-white-color-2);font-size: 14px;font-weight: 400;}
+
+    /* accounts mob css */
+    .accounts-mob__wrapper {display: none;margin: 0 20px 30px;}
+    .accounts-mob__list-item:nth-child(2) .accounts-mob__link {margin-bottom: 40px;} 
+    .accounts-mob__list-item:last-child .accounts-mob__link {background: none;justify-content: center;padding: 0;border-radius: 0;margin: 0 50px 20px;}
+    .accounts-mob__list-item:last-child .accounts-mob__list-title {text-align: center;margin-bottom: 0;}
+
+    /* upcoming bank holidays mob */
+    .upcoming-mob__wrap {display: block;margin: 0 20px 20px;}
+    .upcoming-mob__title {display: flex;align-items: center;justify-content: space-between;background-color: var(--blue-color);color: var(--text-white-color);font-size: 16px;font-weight: 400;padding: 10px 15px;border-radius: 30px;}
+    .upcoming-mob__title span {width: 40px;height: 40px;}  
+    .upcoming-caldr__list.active, .upcoming-holdys__sidebar.active {display: none;} 
+
+    /* trans clickability css */
+    .trans-mob__wrapper.active .accounts-mob__wrapper {display: block;}
+    .trans-mob__wrapper.active {display: none;}
+    .accounts-mob__wrapper.active {display: block;}
+
+    /* right section */
+    /* entry details */
+    .entry-details__link {background-color: var(--lightblue-color-2);padding: 20px 30px;}
+    .entry-details__sub-title {display: block;color: var(--text-white-color-2);font-size: 16px;font-weight: 600;margin-bottom: 20px;}
+    .entry-details__mob-para {display: block;color: var(--text-white-color-2);font-size: 12px;font-weight: 400;}
+    .entry-details__wrap, .entry-details__link {pointer-events: none;}
+    .entry-details__sidebar.active {display: block;}
+
+    /* balance summary */
+    .balance-sum__link {background-color: var(--lightblue-color);position: relative;margin-bottom: 20px;}
+    .balance-sum__link::before {content: "";width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #f05a6a;position: absolute;right: 20px;top: 20px;} 
+    .balance-sum__link::after {display: none;}
+    .balance-sum__link.active::after {display: block;content: "";width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-bottom: 10px solid #f05a6a;position: absolute;right: 20px;top: 20px;}
+    .balance-sum__link.active::before {display: none;}
+
+    /* account num css */
+    .account-num__list {background: none;padding: 0 0 10px;}
+
+    /* account num mob btns */
+    .account-num__btn-wrap {display: flex;align-items: center;justify-content: space-between;margin-bottom: 20px;}
+    .account-num__btns {background-color: var(--lightblue-color-2);color: var(--white-color);font-size: 16px;font-weight: 600;padding: 20px 0;text-align: center;position: relative;}
+    .account-num__btns:nth-child(1) {width: 20%;}
+    .account-num__btns:nth-child(2) {width: 30%;}
+    .account-num__btns:nth-child(2)::before {content: "";background-color: var(--primary-color);width: 2px;height: 100%;position: absolute;left: 0;top: 0;}
+    .account-num__btns:nth-child(2)::after {content: "";background-color: var(--primary-color);width: 2px;height: 100%;position: absolute;right: 0;top: 0;}
+    .account-num__btns:nth-child(3) {width: 50%;}
+
+    /* account num view btn */
+    .account-num__view-btn {display: block;background-color: #5FA564;color: var(--white-color);font-size: 24px;font-weight: 600;padding: 25px;text-align: center;}
+
+    /* account num clickability */  
+    .balance-sum__link.active .account-num__wrap, .account-num__wrap.active {display: block;}
+    .trans-mob__wrapper.active, .upcoming-mob__wrap.active, .footer-wrapper.active {display: none;}
+
+    /* footer css */
+    .footer-wrapper {display: block;background-color: var(--lightblue-color-2);padding: 20px 40px;border-top-left-radius: 25px;border-top-right-radius: 25px;}
+    .footer__list {display: flex;align-items: center;justify-content: space-between;}
+    .footer__img, .footer__img img {width: 35px;height: 35px;} 
+    .footer__img {margin: 0 auto 15px;}
+    .footer__title {color: var(--text-white-color);font-size: 20px;font-weight: 400;}
+    .footer__item:first-child .footer__img {background-color: var(--white-color);padding: 25px;border-radius: 50%;display: flex;align-items: center;justify-content: center;margin: 0 auto;}
+    
+}
+
+@media only screen and (max-width: 599px) {
+
+    /* header css */
+    .header__inner-wrap, .header__icon-wrap {padding: 0 10px;} 
+    .header__icon-bell {margin-right: 40px;}
+    .header__icon-bell::after {right: 46px;}
+    .header__icon-bell, .header__icon-bell img {width: 25px;height: 25px;}
+    .header__icon-mic, .header__icon-mic img {width: 26px;height: 25px;}
+
+    /* left section */
+    /* transaction mob css */
+    .trans-mob__wrapper, .accounts-mob__wrapper {margin: 0 15px 20px;}
+    /* trans mob btn */
+    .trans-mob-details__btn, .trans-mob-acnts__btn, .accounts-mob-pay__btn, .accounts-mob-acnts__btn, .footer__title {font-size: 14px;}
+    .trans-mob-details__btn span, .trans-mob-acnts__btn span, .accounts-mob-pay__btn span, .accounts-mob-acnts__btn span {margin-right: 10px;}
+    /* trans mob card list */ 
+    .trans-mob__list, .trans-mob__link, .accounts-mob__list, .accounts-mob__link {padding: 15px;}
+    .trans-mob__img, .accounts-mob__img {width: 70px;height: 70px;}
+    .trans-mob__content, .accounts-mob__content {width: calc(100% - 70px);padding-left: 10px;}
+    .trans-mob__list-title, .accounts-mob__list-title {margin-bottom: 5px;}
+
+    /* amounts mob css */
+    .accounts-mob__list-item:nth-child(2) .accounts-mob__link {margin-bottom: 20px;}
+    .accounts-mob__list-item:last-child .accounts-mob__link {margin: 0 10px 15px;}    
+
+    /* right section */
+    /* entry details */
+    .entry-details__link {padding: 20px;}
+
+    /* account num mob btns */
+    .account-num__btns {font-size: 13px;}
+    .account-num__btns:nth-child(2)::before {left: -4px;}
+    .account-num__btns:nth-child(2)::after {right: 2px;}
+
+    /* account num view btn */
+    .account-num__view-btn {font-size: 16px;padding: 15px;}
+
+    /* upcoming bank holidays mob */ 
+    .upcoming-mob__title {padding: 10px;}
+
+    /* footer css */
+    .footer-wrapper {padding: 10px 20px;}
+    .footer__img, .footer__img img {width: 20px;height: 20px;} 
+    .footer__img {margin: 0 auto 10px;} 
+    .footer__item:first-child .footer__img {background-color: var(--white-color);padding: 15px;border-radius: 50%;display: flex;align-items: center;justify-content: center;margin: 0 auto;}
+}
